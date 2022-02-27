@@ -1,5 +1,7 @@
 #include "OperatorVector.h"
 
+//g++ main.cpp OperatorVector.cpp -o main
+
 using namespace std;
 
 
