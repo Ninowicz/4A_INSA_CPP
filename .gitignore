@@ -3,3 +3,6 @@
 !*.hpp
 !README
 *.vscode
+*.layout
+*.depend
+*.cbp
