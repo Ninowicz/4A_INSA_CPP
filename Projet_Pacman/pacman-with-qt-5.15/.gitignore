@@ -1,0 +1,8 @@
+!*.cpp
+!*.h
+!*.hpp
+!README
+*.vscode
+*.layout
+*.depend
+*.cbp
