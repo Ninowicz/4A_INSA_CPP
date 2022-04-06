@@ -30,22 +30,22 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
-			<Add option="-std=c++11" />
 			<Add directory="../qtbase-small-5.15.2-x64/include" />
+			<Add directory="../FMOD/include" />
 		</Compiler>
 		<Linker>
 			<Add option="-lQt5Widgets -lQt5Gui -lQt5Core" />
+			<Add library="../FMOD/lib/libfmodex64_vc.lib" />
 			<Add directory="../qtbase-small-5.15.2-x64/lib" />
+			<Add directory="../FMOD/lib" />
 		</Linker>
 		<Unit filename="jeu.cpp" />
 		<Unit filename="jeu.hpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="pacmanwindow.cpp" />
 		<Unit filename="pacmanwindow.hpp" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-			<envvars />
-		</Extensions>
+		<Unit filename="sons.cpp" />
+		<Unit filename="sons.hpp" />
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

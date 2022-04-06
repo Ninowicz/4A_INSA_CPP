@@ -16,7 +16,8 @@ class PacmanWindow : public QFrame
     pixmapInky_Up, pixmapInky_Down, pixmapInky_Left, pixmapInky_Right,
     pixmapPinky_Up, pixmapPinky_Down, pixmapPinky_Right, pixmapPinky_Left,
     pixmapClyde_Up, pixmapClyde_Down, pixmapClyde_Right, pixmapClyde_Left,
-    pixmapFantome_Scared;
+    pixmapFantome_Scared, pixmapFantome_Dead,
+    pixmapGameOver, pixmapPressAnyKey,pixmapPressR ;
 
   public:
     PacmanWindow(QWidget *pParent=0, Qt::WindowFlags flags=0);
@@ -34,6 +35,20 @@ class PacmanWindow : public QFrame
     void Respawn();
     void EtatJeu();
     void FantomeMange(Fantome);
+    Direction DetecteFantomeToNode(Fantome);
+    Direction AncienneDirectionOpposee(Direction);
+
+    void TimeManagerGhost(Fantome);
+
+    void DeplaceFantome();
+    void DeplaceBlinky();
+    void DeplaceClyde();
+    void DeplacePinky();
+    void DeplaceInky();
+
+    Direction DeplaceFantomeMort(Fantome);
+    void TransformFantomeBackToHunter();
+
 
 };
 
